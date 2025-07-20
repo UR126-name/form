@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل في مسابقة الكيمياء</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #111;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #333;
+      width: 350px;
+      direction: rtl;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0f62fe;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #ccc;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #222;
+      color: white;
+    }
+
+    input[readonly] {
+      background-color: #333;
+      color: #999;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #0f62fe;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0353e9;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>التسجيل في مسابقة الكيمياء</h2>
+    <form action="#">
+      <label for="name">الاسم الكامل:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">رقم الهاتف:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="age">العمر:</label>
+      <input type="number" id="age" name="age" min="10" max="100" required>
+
+      <label for="type">نوع المسابقة:</label>
+      <input type="text" id="type" name="type" value="كيمياء" readonly>
+
+      <input type="submit" value="أرسل">
+    </form>
+  </div>
+</body>
+</html>
